@@ -141,9 +141,9 @@ export default function Footer() {
 
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
               <div className="text-center sm:text-left">
-                <p className="text-lg font-medium text-gray-100">About Us</p>
+                <p className="text-xl sm:text-lg font-medium text-gray-100">About Us</p>
 
-                <ul className="mt-8 space-y-4 text-sm">
+                <ul className="mt-8 space-y-4 text-lg">
                   <li>
                     <Link
                       className="text-gray-100 transition hover:text-gray-100/75"
@@ -183,11 +183,11 @@ export default function Footer() {
               </div>
 
               <div className="text-center sm:text-left">
-                <p className="text-lg font-medium text-gray-100">
+                <p className="text-xl sm:text-lg font-medium text-gray-100">
                   Our Services
                 </p>
 
-                <ul className="mt-8 space-y-4 text-sm">
+                <ul className="mt-8 space-y-4 text-lg sm:text-md">
                   <li>
                     <Link
                       className="text-gray-100 transition hover:text-gray-100/75"
@@ -230,11 +230,11 @@ export default function Footer() {
               </div>
 
               <div className="text-center sm:text-left">
-                <p className="text-lg font-medium text-gray-100">
+                <p className="text-xl sm:text-lg font-medium text-gray-100">
                   Helpful Links
                 </p>
 
-                <ul className="mt-8 space-y-4 text-sm">
+                <ul className="mt-8 space-y-4 text-lg sm:text-md">
                   <li>
                     <Link
                       className="text-gray-100 transition hover:text-gray-100/75"
@@ -274,9 +274,9 @@ export default function Footer() {
               </div>
 
               <div className="text-center sm:text-left">
-                <p className="text-lg font-medium text-gray-100">Contact Us</p>
+                <p className="text-xl sm:text-lg font-medium text-gray-100">Contact Us</p>
 
-                <ul className="mt-8 space-y-4 text-sm">
+                <ul className="mt-8 space-y-4 text-lg xs:text-sm xs:text-md">
                   <li>
                     <Link
                       className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
@@ -348,10 +348,11 @@ export default function Footer() {
                       />
                     </svg>
 
+                    <a href="https://aitr.ac.in/" target="blank">
                     <address className="-mt-0.5 flex-1 not-italic text-gray-100">
                       Acropolis Institute of Technology and Research , Indore ,
                       India
-                    </address>
+                    </address></a>
                   </li>
                 </ul>
               </div>
@@ -360,7 +361,7 @@ export default function Footer() {
 
           <div className="mt-12 border-t border-gray-300 pt-6">
             <div className="text-center sm:flex sm:justify-between sm:text-left">
-              <p className="text-sm text-gray-100">
+              <p className="text-lg text-gray-100">
                 <span className="block sm:inline">All rights reserved.</span>
 
                 <Link
@@ -380,8 +381,8 @@ export default function Footer() {
                 </Link>
               </p>
 
-              <p className="mt-4 text-sm text-gray-100 sm:order-first sm:mt-0">
-                &copy; 2022 Disha
+              <p className="mt-4 text-lg text-gray-100 sm:order-first sm:mt-0">
+                &copy; 2024 Disha
               </p>
             </div>
           </div>
