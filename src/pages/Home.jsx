@@ -10,13 +10,13 @@ export default function Home() {
         <div
             className="lg:flex-grow mt-5 md:mt-0 md:w-1/2 lg:w-2/5 lg:pr-16 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <p
-                className="text-2xl font-extrabold leading-9 pl-20 tracking-tight mb-3 text-gray-900 dark:text-black sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal">
+                className="text-2xl lg:pl-40 font-extrabold leading-9 pl-20 tracking-tight mb-3 text-gray-900 dark:text-black sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal">
                 Introducing Disha
             </p>
             <p className="mb-8 md:pl-0  pl-2 dark:text-white text-3xl leading-9 font-bold text-center">
             A Smart platform for empowering Alumni-Student Connections for Career Growth. 
             </p>
-    <button type="button" className="text-black ml-32 mb-8 bg-gradient-to-r from-[#f1cb79] via-[#e6b243] to-[#ffd455] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-[#725b28] dark:focus:ring-[#ffd375] shadow-lg shadow-[#ffd271]/50 dark:shadow-lg dark:shadow-[#ffd271]/80 font-bold rounded-full text-lg px-5 py-2.5 text-center me-2">
+    <button type="button" className="text-black  lg:ml-64 mb-8 bg-gradient-to-r from-[#f1cb79] via-[#e6b243] to-[#ffd455] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-[#725b28] dark:focus:ring-[#ffd375] shadow-lg shadow-[#ffd271]/50 dark:shadow-lg dark:shadow-[#ffd271]/80 font-bold rounded-full text-lg px-5 py-2.5 text-center me-2">
         Get Started
     </button>
         </div>

@@ -88,7 +88,7 @@ const Pricing = () => {
 
   return (
     <div className="relative flex flex-col min-h-screen bg-gray-900">
-      <main className="flex-1 py-12 px-6 lg:px-8">
+      <main className="flex-1 py-12 px-6 lg:px-8 ">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-white">
             Flexible Pricing Plans
@@ -122,14 +122,14 @@ const Pricing = () => {
         </div>
 
         {/* Plans */}
-        <div className="flex flex-col items-center justify-center mt-16 space-y-8 lg:flex-row lg:items-stretch lg:space-x-8 lg:space-y-0">
+        <div className="flex flex-col   items-center justify-center mt-16 space-y-8 lg:flex-row lg:items-stretch lg:space-x-8 lg:space-y-0">
           {plans.map((plan) => (
             <section
               key={plan.id}
-              className="flex flex-col w-full max-w-xl p-12 space-y-6 bg-gray-800 rounded-lg shadow-lg"
+              className="flex flex-col w-full  max-w-xl p-12 space-y-6 bg-gray-800 rounded-3xl shadow-lg"
             >
               {/* Price */}
-              <div className="flex flow-row justify-between">
+              <div className="flex flow-row justify-between ">
                 <div className="flex-shrink-0">
                   <span
                     className={`text-4xl font-medium tracking-tight ${
@@ -152,7 +152,7 @@ const Pricing = () => {
               </div>
 
               {/* Description */}
-              <div className="flex-shrink-0 pb-6 space-y-2 border-b border-gray-700">
+              <div className="flex-shrink-0 pb-6 space-y-2 border-b rounded-lg border-gray-700">
                 <h2 className="text-2xl font-normal text-white">{plan.name}</h2>
                 <p className="text-sm text-gray-400">{plan.description}</p>
               </div>

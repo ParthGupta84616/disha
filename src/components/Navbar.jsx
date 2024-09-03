@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <div className="bg-slate-900 bg-gradient-to-b from-slate-900 to-gray-900">
       <header className="text-gray-600 body-font">
-        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center border-b border-gray-300">
+        <div className="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center border-b border-gray-300">
           <Link
             to="/"
             className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
@@ -34,7 +34,7 @@ export default function Navbar() {
             </Link>
           </nav>
           <Link
-            className="group relative lg:ml-8 inline-flex items-center overflow-hidden rounded bg-indigo-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500 mt-4 md:mt-0"
+            className="group relative rounded-xl lg:ml-8 inline-flex items-center overflow-hidden  bg-indigo-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500 mt-4 md:mt-0"
             to="/login"
           >
             <span className="absolute -end-full transition-all group-hover:end-4">
