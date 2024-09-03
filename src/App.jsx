@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import PricingPage from './pages/Pricing';
 import RouteTracker from './components/RouteTracker';
+import Error404 from './pages/Error404';
 
 export default function App() {
   const router = createBrowserRouter([
@@ -86,12 +87,24 @@ export default function App() {
       )
     },
     {
-      path: '/*',
+      path: '/login',
       element: (
         <div>
           <RouteTracker>
             <Navbar />
             <Error />
+            <Footer />
+          </RouteTracker>
+        </div>
+      )
+    },
+    {
+      path: '/*',
+      element: (
+        <div>
+          <RouteTracker>
+            <Navbar />
+            <Error404 />
             <Footer />
           </RouteTracker>
         </div>
