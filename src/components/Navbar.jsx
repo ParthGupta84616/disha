@@ -34,12 +34,12 @@ export default function Navbar() {
             </Link>
           </nav>
           <Link
-            className="group relative inline-flex items-center overflow-hidden rounded bg-indigo-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500"
+            className="group relative lg:ml-8 inline-flex items-center overflow-hidden rounded bg-indigo-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500 mt-4 md:mt-0"
             to="/login"
           >
             <span className="absolute -end-full transition-all group-hover:end-4">
               <svg
-                className="size-5 rtl:rotate-180"
+                className="w-5 h-5 rtl:rotate-180"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -53,8 +53,7 @@ export default function Navbar() {
                 />
               </svg>
             </span>
-
-            <span className="text-sm font-medium transition-all group-hover:me-4">
+            <span className="text-sm font-medium transition-all  group-hover:me-4">
               Signup
             </span>
           </Link>
@@ -63,3 +62,4 @@ export default function Navbar() {
     </div>
   );
 }
+
