@@ -1,12 +1,15 @@
 import React from 'react'
-import About from "./About";
+// import Pricing from './Pricing'
+// import About from "./About";
+import Dashboard from "./Dashboard";
 
 export default function Home() {
   return (
     <div>
       Home
-      
-      {/* <About /> */}
+      {/* <Pricing /> 
+      <About /> */}
+      <Dashboard />
     </div>
   )
 }
