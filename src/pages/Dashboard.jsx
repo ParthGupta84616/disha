@@ -1,12 +1,11 @@
 import React from 'react'
-// import Alumni from "../Asset/Alumni";
-import Skills from "../Asset/Skills";
+import Alumni from "../assests/Alumni";
+import Skills from "../assests/Skills";
 
 export default function Dashboard() {
   return (
     <div>
-      Dashboard
-      {/* <Alumni /> */}
+      <Alumni />
       <Skills />
     </div>
   )

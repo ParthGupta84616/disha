@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import free from "../assests/free.png";
 
 // Reusable Feature List Component
 const FeatureList = ({ features, isIncluded }) => (
@@ -6,7 +7,9 @@ const FeatureList = ({ features, isIncluded }) => (
     {features.map((feature, index) => (
       <li key={index} className="flex items-center">
         <svg
-          className={`w-6 h-6 ${isIncluded ? "text-green-400" : "text-red-400"}`}
+          className={`w-6 h-6 ${
+            isIncluded ? "text-green-400" : "text-red-400"
+          }`}
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           viewBox={isIncluded ? "0 0 20 20" : "0 0 24 24"}
@@ -29,15 +32,13 @@ const FeatureList = ({ features, isIncluded }) => (
                 strokeWidth="2"
                 fill="red"
               />
-              <path
-                stroke="white"
-                strokeWidth="2"
-                d="M8 8l8 8M8 16l8-8"
-              />
+              <path stroke="white" strokeWidth="2" d="M8 8l8 8M8 16l8-8" />
             </>
           )}
         </svg>
-        <span className="ml-3 text-lg font-medium text-gray-300">{feature}</span>
+        <span className="ml-3 text-lg font-medium text-gray-300">
+          {feature}
+        </span>
       </li>
     ))}
   </ul>
@@ -70,7 +71,7 @@ const Pricing = () => {
       id: "premium",
       name: "Premium",
       price: { monthly: 9, annually: 99 },
-      description: "Includes Advanced features",
+      description: "Includes Premium features",
       featuresIncluded: [
         "Profile Creation",
         "Standard Job Search",
@@ -89,7 +90,9 @@ const Pricing = () => {
     <div className="relative flex flex-col min-h-screen bg-gray-900">
       <main className="flex-1 py-12 px-6 lg:px-8">
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-white">Flexible Pricing Plans</h1>
+          <h1 className="text-4xl font-bold text-white">
+            Flexible Pricing Plans
+          </h1>
           <p className="mt-4 text-lg text-gray-400">
             Get the right plan for your Growth needs
           </p>
@@ -126,17 +129,26 @@ const Pricing = () => {
               className="flex flex-col w-full max-w-xl p-12 space-y-6 bg-gray-800 rounded-lg shadow-lg"
             >
               {/* Price */}
-              <div className="flex-shrink-0">
-                <span
-                  className={`text-4xl font-medium tracking-tight ${
-                    plan.name === "Standard" ? "text-green-500" : "text-white"
-                  }`}
-                >
-                  ${billPlan === "monthly" ? plan.price.monthly : plan.price.annually}
-                </span>
-                <span className="text-gray-400">
-                  {billPlan === "monthly" ? "/month" : "/year"}
-                </span>
+              <div className="flex flow-row justify-between">
+                <div className="flex-shrink-0">
+                  <span
+                    className={`text-4xl font-medium tracking-tight ${
+                      plan.name === "Standard" ? "text-green-500" : "text-white"
+                    }`}
+                  >
+                    $
+                    {billPlan === "monthly"
+                      ? plan.price.monthly
+                      : plan.price.annually}
+                  </span>
+                  <span className="text-gray-400">
+                    {billPlan === "monthly" ? "/month" : "/year"}
+                  </span>
+                </div>
+                {/* Conditionally render the logo only for the Standard plan */}
+                {plan.name === "Standard" && (
+                  <img src={free} alt="logo" className="w-24 h-12" />
+                )}
               </div>
 
               {/* Description */}
@@ -149,7 +161,10 @@ const Pricing = () => {
               <FeatureList features={plan.featuresIncluded} isIncluded={true} />
 
               {/* Features Not Included */}
-              <FeatureList features={plan.featuresNotIncluded} isIncluded={false} />
+              <FeatureList
+                features={plan.featuresNotIncluded}
+                isIncluded={false}
+              />
 
               {/* Button */}
               <div className="flex-shrink-0 pt-4">
