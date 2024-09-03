@@ -27,7 +27,7 @@ const teamMembers = [
     role: "Cloud Architect",
     description:
       "Specializes in designing and managing cloud infrastructure, ensuring scalability, security, and efficiency of cloud-based systems.",
-    imgSrc: "https://dummyimage.com/200x200",
+    imgSrc: "https://avatars.githubusercontent.com/u/115715009?v=4",
   },
   {
     id: 2,
@@ -67,7 +67,7 @@ const teamMembers = [
     role: "Marketing Manager",
     description:
       "Expert in developing and executing marketing strategies, driving brand awareness, and analyzing market trends to boost business growth.",
-    imgSrc: "https://dummyimage.com/206x206",
+    imgSrc: "https://dummyimage.com/204x207",
   },
 ];
 
