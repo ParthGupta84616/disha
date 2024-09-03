@@ -7,7 +7,8 @@ export default function Footer() {
     <div>
       <footer className="bg-gray-900">
         <div className="mx-auto max-w-screen-3xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24 ">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3  pt-6 border-t border-gray-300">
+        <div className="w-11/12 h-0.5 lg:ml-16 bg-gray-100 opacity-50 "></div>
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3  pt-6  lg:pb-5">
             <div>
               <div className="flex justify-center text-teal-200 sm:justify-start">
                 <Link
@@ -358,8 +359,8 @@ export default function Footer() {
               </div>
             </div>
           </div>
-
-          <div className="mt-12 border-t border-gray-300 pt-6">
+          <div className="w-11/12 h-0.5 lg:ml-16 bg-gray-100 opacity-50 "></div>
+          <div className="mt-12  pt-6">
             <div className="text-center sm:flex sm:justify-between sm:text-left">
               <p className="text-lg text-gray-100">
                 <span className="block sm:inline">All rights reserved.</span>
