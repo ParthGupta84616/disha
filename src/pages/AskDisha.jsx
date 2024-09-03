@@ -26,7 +26,7 @@ export default function AskDisha() {
 
               <Link
                 className="block w-full rounded-md border border-blue-600 px-14 py-4   text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
-                to="/login#"
+                to="/login"
               >
                 Learn More
               </Link>

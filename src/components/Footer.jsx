@@ -14,18 +14,15 @@ export default function Footer() {
                   to="/"
                   className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
                 >
-                  <img
-                    src={disha}
-                    alt="logo"
-                    className="w-40 h-14"
-                  />
-  
+                  <img src={disha} alt="logo" className="w-40 h-14" />
                 </Link>
               </div>
 
-              <p className="mt-6 max-w-md text-center leading-relaxed text-gray-100 sm:max-w-xs sm:text-left">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Incidunt consequuntur amet culpa cum itaque neque.
+              <p className="mt-6 max-w-md text-center text-sm leading-relaxed text-gray-100 sm:max-w-xs sm:text-left">
+                "Disha" provides a centralized platform for organized
+                interactions between alumni and students, ensuring easy access
+                to resources, continuous engagement through mentorship, and
+                personalized AI-driven guidance.
               </p>
 
               <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
@@ -152,7 +149,7 @@ export default function Footer() {
                       className="text-gray-100 transition hover:text-gray-100/75"
                       to="#"
                     >
-                      Company History
+                      Who Are We?
                     </Link>
                   </li>
 
@@ -161,7 +158,7 @@ export default function Footer() {
                       className="text-gray-100 transition hover:text-gray-100/75"
                       to="#"
                     >
-                      Meet the Team
+                      Our Mission
                     </Link>
                   </li>
 
@@ -170,7 +167,7 @@ export default function Footer() {
                       className="text-gray-100 transition hover:text-gray-100/75"
                       to="#"
                     >
-                      Employee Handbook
+                      Our Vision
                     </Link>
                   </li>
 
@@ -180,7 +177,6 @@ export default function Footer() {
                       to="#"
                     >
                       {" "}
-                      Careers{" "}
                     </Link>
                   </li>
                 </ul>
@@ -195,39 +191,39 @@ export default function Footer() {
                   <li>
                     <Link
                       className="text-gray-100 transition hover:text-gray-100/75"
-                      to="#"
+                      to="/dashboard"
                     >
-                      Web Development
+                      Alumni
                     </Link>
                   </li>
 
                   <li>
                     <Link
                       className="text-gray-100 transition hover:text-gray-100/75"
-                      to="#"
+                      to="/ask-disha"
                     >
                       {" "}
-                      Web Design{" "}
+                      Ask Disha{" "}
                     </Link>
                   </li>
 
                   <li>
                     <Link
                       className="text-gray-100 transition hover:text-gray-100/75"
-                      to="#"
+                      to="/Institution"
                     >
                       {" "}
-                      Marketing{" "}
+                      Institution{" "}
                     </Link>
                   </li>
 
                   <li>
                     <Link
                       className="text-gray-100 transition hover:text-gray-100/75"
-                      to="#"
+                      to="/about"
                     >
                       {" "}
-                      Google Ads{" "}
+                      About{" "}
                     </Link>
                   </li>
                 </ul>
@@ -242,7 +238,7 @@ export default function Footer() {
                   <li>
                     <Link
                       className="text-gray-100 transition hover:text-gray-100/75"
-                      to="#"
+                      to="/about"
                     >
                       {" "}
                       FAQs{" "}
@@ -252,20 +248,20 @@ export default function Footer() {
                   <li>
                     <Link
                       className="text-gray-100 transition hover:text-gray-100/75"
-                      to="#"
+                      to="/pricing"
                     >
                       {" "}
-                      Support{" "}
+                      Prcicing{" "}
                     </Link>
                   </li>
 
                   <li>
                     <Link
                       className="group flex gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                      to="#"
+                      to="/ask-disha"
                     >
                       <span className="text-gray-100 transition group-hover:text-gray-100/75">
-                        Live Chat
+                        Ask Disha
                       </span>
 
                       <span className="relative flex size-2">
@@ -302,7 +298,7 @@ export default function Footer() {
                       </svg>
 
                       <span className="flex-1 text-gray-100">
-                        Disha @disha.com
+                        Disha@disha.com
                       </span>
                     </Link>
                   </li>
