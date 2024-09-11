@@ -1,4 +1,5 @@
-import React, { memo } from "react";
+import React from "react";
+import { useParams } from "react-router-dom";
 import {
   FaJava,
   FaJs,
@@ -104,8 +105,25 @@ const skills = [
   },
 ];
 
+// Mapping of alumniId to the number of skills to display
+const alumniSkillsCount = {
+  "1": 5,
+  "2": 9,
+  "3": 7,
+  "4": 4,
+  "5": 8,
+  "6": 6,
+
+};
+
+// Utility function to get a random subset of skills
+const getRandomSkills = (allSkills, numberOfSkills) => {
+  const shuffledSkills = [...allSkills].sort(() => 0.5 - Math.random());
+  return shuffledSkills.slice(0, numberOfSkills);
+};
+
 // SkillCard Component
-const SkillCard = memo(({ skill }) => (
+const SkillCard = ({ skill }) => (
   <div className="p-5 rounded-lg bg-gray-800 shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl">
     <div className="flex items-center space-x-2">
       <div>{skill.icon}</div>
@@ -123,19 +141,27 @@ const SkillCard = memo(({ skill }) => (
       </div>
     </div>
   </div>
-));
+);
 
 // Skills Component
 export default function Skills() {
+  const { alumniId } = useParams(); // Get the alumniId from the URL
+
+  // Determine the number of skills to display based on alumniId
+  const numberOfSkills = alumniSkillsCount[alumniId] || 0;
+
+  // Generate a random subset of skills
+  const selectedSkills = getRandomSkills(skills, numberOfSkills);
+
   return (
     <section className="min-h-screen bg-gray-900 text-gray-100 flex items-center justify-center">
       <div className="container sm:p-6 md:p-8 lg:p-10">
-        <h2 className="font-bold text-3xl lg:text-4xl mb-6">Skills</h2>
-        <h3 className="font-semibold text-gray-400 text-lg lg:text-xl mb-6">
-          Identify Skills to Enhance Your Abilities
+        <h2 className="font-bold pl-4 text-3xl lg:text-4xl mb-6">Skills of Alumni {alumniId}</h2>
+        <h3 className="font-semibold pl-4 text-gray-400 text-lg lg:text-xl mb-6">
+          You can identify Skills to Enhance Your Abilities
         </h3>
         <div className="grid p-10 grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
-          {skills.map((skill) => (
+          {selectedSkills.map((skill) => (
             <SkillCard key={skill.index} skill={skill} />
           ))}
         </div>

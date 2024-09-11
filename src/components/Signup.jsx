@@ -56,12 +56,12 @@ const Signup = ({ handleChange, handleSubmit, setCurrentStep }) => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row w-full max-w-7xl bg-gray-900 rounded-lg overflow-hidden">
-      <div className="hidden md:block md:w-2/5 bg-indigo-600 p-10">
+    <div className="flex flex-col md:flex-row w-full max-w-7xl bg-gray-800 rounded-3xl overflow-hidden">
+      <div className="hidden md:block md:w-2/5 bg-gray-700 p-10">
         <img
           src={SignUpImg}
           alt="Sign Up"
-          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+          className="w-full brightness-90 h-full rounded-l-2xl object-cover transition-transform duration-500 hover:scale-105"
         />
       </div>
       <div className="w-full md:w-3/5 p-10">
@@ -70,7 +70,7 @@ const Signup = ({ handleChange, handleSubmit, setCurrentStep }) => {
           <div className="flex flex-col mb-5">
             <label
               htmlFor="firstName"
-              className="text-xs font-semibold text-gray-300"
+              className="text-md mb-1 font-semibold text-gray-300"
             >
               First Name
             </label>
@@ -78,7 +78,7 @@ const Signup = ({ handleChange, handleSubmit, setCurrentStep }) => {
               type="text"
               id="firstName"
               onChange={handleChange}
-              className="w-full p-3 bg-gray-700 text-gray-300 border-2 border-gray-600 rounded-lg outline-none focus:border-indigo-500 transition-all duration-300"
+              className="w-full pl-3 py-2 bg-gray-700 text-gray-300 border-2 border-gray-600 rounded-lg outline-none focus:border-indigo-500 transition-all duration-300"
               placeholder="First Name"
               required
             />
@@ -86,7 +86,7 @@ const Signup = ({ handleChange, handleSubmit, setCurrentStep }) => {
           <div className="flex flex-col mb-5">
             <label
               htmlFor="middleName"
-              className="text-xs font-semibold text-gray-300"
+              className="text-md mb-1 font-semibold text-gray-300"
             >
               Middle Name (Optional)
             </label>
@@ -94,14 +94,14 @@ const Signup = ({ handleChange, handleSubmit, setCurrentStep }) => {
               type="text"
               id="middleName"
               onChange={handleChange}
-              className="w-full p-3 bg-gray-700 text-gray-300 border-2 border-gray-600 rounded-lg outline-none focus:border-indigo-500 transition-all duration-300"
+              className="w-full pl-3 py-2 bg-gray-700 text-gray-300 border-2 border-gray-600 rounded-lg outline-none focus:border-indigo-500 transition-all duration-300"
               placeholder="Middle Name"
             />
           </div>
           <div className="flex flex-col mb-5">
             <label
               htmlFor="lastName"
-              className="text-xs font-semibold text-gray-300"
+              className="text-md mb-1 font-semibold text-gray-300"
             >
               Last Name
             </label>
@@ -109,7 +109,7 @@ const Signup = ({ handleChange, handleSubmit, setCurrentStep }) => {
               type="text"
               id="lastName"
               onChange={handleChange}
-              className="w-full p-3 bg-gray-700 text-gray-300 border-2 border-gray-600 rounded-lg outline-none focus:border-indigo-500 transition-all duration-300"
+              className="w-full pl-3 py-2 bg-gray-700 text-gray-300 border-2 border-gray-600 rounded-lg outline-none focus:border-indigo-500 transition-all duration-300"
               placeholder="Last Name"
               required
             />
@@ -117,7 +117,7 @@ const Signup = ({ handleChange, handleSubmit, setCurrentStep }) => {
           <div className="flex flex-col mb-5">
             <label
               htmlFor="email"
-              className="text-xs font-semibold text-gray-300"
+              className="text-md mb-1 font-semibold text-gray-300"
             >
               Email
             </label>
@@ -136,7 +136,7 @@ const Signup = ({ handleChange, handleSubmit, setCurrentStep }) => {
           <div className="flex flex-col mb-5">
             <label
               htmlFor="mobileNumber"
-              className="text-xs font-semibold text-gray-300"
+              className="text-md mb-1 font-semibold text-gray-300"
             >
               Mobile Number
             </label>
@@ -159,7 +159,7 @@ const Signup = ({ handleChange, handleSubmit, setCurrentStep }) => {
           <div className="flex flex-col mb-5">
             <label
               htmlFor="password"
-              className="text-xs font-semibold text-gray-300"
+              className="text-md mb-1 font-semibold text-gray-300"
             >
               Password
             </label>
@@ -189,7 +189,7 @@ const Signup = ({ handleChange, handleSubmit, setCurrentStep }) => {
           <div className="flex flex-col mb-5">
             <label
               htmlFor="confirmPassword"
-              className="text-xs font-semibold text-gray-300"
+              className="text-md mb-1 font-semibold text-gray-300"
             >
               Confirm Password
             </label>
@@ -219,19 +219,22 @@ const Signup = ({ handleChange, handleSubmit, setCurrentStep }) => {
               <p className="text-red-500 text-xs mt-1">{passwordError}</p>
             )}
           </div>
+          <div className="flex items-center justify-end space-x-2">
+            <p>Already have an account?</p>
+            <button
+              onClick={() => setCurrentStep("login")}
+              className="text-blue-500 cursor-pointer bg-transparent border-none"
+            >
+              Login
+            </button>
+          </div>
+
           <div className="flex items-center justify-around w-full mt-8">
             <button
               type="submit"
-              className="bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg px-4 py-3 font-semibold transition-all duration-300"
+              className="bg-blue-500 rounded-xl w-36 text-xl hover:bg-blue-600 text-white px-4 py-3 font-semibold transition-all duration-300"
             >
-              Sign Up
-            </button>
-            <button
-              type="button"
-              onClick={() => setCurrentStep("login")}
-              className="bg-gray-600 hover:bg-gray-700 text-white rounded-lg px-4 py-3 font-semibold transition-all duration-300"
-            >
-              Login
+              Next
             </button>
           </div>
         </form>

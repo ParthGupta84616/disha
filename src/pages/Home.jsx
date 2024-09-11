@@ -1,5 +1,6 @@
 import React from "react";
 import groupImg from "../assests/groupImg.avif";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -14,12 +15,12 @@ export default function Home() {
               A Smart platform for empowering Alumni-Student Connections for
               Career Growth.
             </p>
-            <button
-              type="button"
+            <Link
               className="text-black lg:ml-64 mb-8 bg-gradient-to-r from-[#f1cb79] via-[#e6b243] to-[#ffd455] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-[#725b28] dark:focus:ring-[#ffd375] shadow-lg shadow-[#ffd271]/50 dark:shadow-lg dark:shadow-[#ffd271]/80 font-bold rounded-[20px] text-lg px-5 py-2.5 text-center me-2"
+              to="/login"
             >
               Get Started
-            </button>
+            </Link>
           </div>
           <div className="lg:max-w-lg lg:w-full mb-5 md:mb-0 md:w-1/2 w-3/6">
             <img

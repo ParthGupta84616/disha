@@ -69,37 +69,28 @@ const instituteData = [
   },
 ];
 
-export default function institution() {
+export default function Institution() {
   return (
     <div className="bg-gray-900">
       <InstituteHeroSection />
-
       <section className="text-gray-200 body-font font-semibold text-xl">
-        <div className="container px-5 py-24 mx-auto" bis_skin_checked="1">
-          {/* <div className="border-b-2 border-gray-700 mb-2"/> */}
-          <div
-            className="flex flex-wrap text-center border-t-2 border-gray-600 border-opacity-55"
-            bis_skin_checked="1"
-          >
-            {Array(8)
-              .fill(null)
-              .map((_, index) => (
-                <div
-                  key={index}
-                  className={`w-full sm:w-1/2 p-4 ${
-                    index % 2 === 0
-                      ? "sm:border-r-2 border-b-2 border-gray-600 border-opacity-50 pt-4"
-                      : "border-b-2 my-2 border-gray-600 border-opacity-50"
-                  }`}
-                >
-                  <InstituteCard
-                    image={instituteData[index].Logo}
-                    title={instituteData[index].title}
-                    description={instituteData[index].description}
-                    link={instituteData[index].link}
-                  />
-                </div>
-              ))}
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-wrap text-center border-t-2 border-gray-600 border-opacity-55">
+            {instituteData.map((institute, index) => (
+              <div
+                key={index}
+                className={`w-full sm:w-1/2 p-4 ${
+                  index % 2 === 0 ? "sm:border-r-2 border-b-2" : "border-b-2"
+                } border-gray-600 border-opacity-50`}
+              >
+                <InstituteCard
+                  image={institute.Logo}
+                  title={institute.title}
+                  description={institute.description}
+                  link={institute.link}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>

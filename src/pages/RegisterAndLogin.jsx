@@ -43,7 +43,7 @@ const RegisterAndLogin = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-gray-800 text-gray-100">
+    <div className="min-h-screen flex flex-col justify-center items-center bg-gray-900 text-gray-100">
       {currentStep === 'signup' && <Signup handleChange={handleChange} handleSubmit={handleSubmit} setCurrentStep={setCurrentStep} />}
       {currentStep === 'additional' && <AdditionalInfo handleChange={handleChange} handleSubmit={handleSubmit} setCurrentStep={setCurrentStep} />}
       {currentStep === 'login' && <Login handleChange={handleChange} handleSubmit={handleSubmit} setCurrentStep={setCurrentStep} />}

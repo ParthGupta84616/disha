@@ -6,8 +6,8 @@ export default function Footer() {
   return (
     <div>
       <footer className="bg-gray-900">
-        <div className="mx-auto max-w-screen-3xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24 ">
-          <div className="w-11/12 h-0.5 lg:ml-16 bg-gray-100 opacity-50 "></div>
+        <div className="mx-auto max-w-screen-3xl px-4 pb-6 pt-16 sm:px-6 lg:px-14 lg:pt-24 ">
+          <div className="w-11/12 h-0.5 lg:ml-16 bg-gray-100 opacity-50 " />
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3  pt-6  lg:pb-5">
             <div>
               <div className="flex justify-center text-teal-200 sm:justify-start">
@@ -19,12 +19,15 @@ export default function Footer() {
                 </Link>
               </div>
 
-              <p className="mt-6 max-w-md text-center text-sm leading-relaxed text-gray-100 sm:max-w-xs sm:text-left">
-                "Disha" provides a centralized platform for organized
-                interactions between alumni and students, ensuring easy access
-                to resources, continuous engagement through mentorship, and
-                personalized AI-driven guidance.
-              </p>
+              <div className="flex flex-row">
+                <p className="max-w-md text-center text-sm leading-relaxed text-gray-100 sm:max-w-xs sm:text-left">
+                  <strong className="text-orange-400 text-lg">Disha </strong>
+                  offers a centralized platform that facilitates organized
+                  interactions between alumni and students. It provides easy
+                  access to resources, fosters continuous engagement through
+                  mentorship, and delivers personalized AI-driven guidance.
+                </p>
+              </div>
 
               <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
                 <li>
@@ -248,7 +251,7 @@ export default function Footer() {
                     </Link>
                   </li>
 
-                  <li>
+                  {/* <li>
                     <Link
                       className="text-gray-100 transition hover:text-gray-100/75"
                       to="/pricing"
@@ -256,7 +259,7 @@ export default function Footer() {
                       {" "}
                       Prcicing{" "}
                     </Link>
-                  </li>
+                  </li> */}
 
                   <li>
                     <Link
@@ -364,7 +367,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="w-11/12 h-0.5 lg:ml-16 bg-gray-100 opacity-50 "></div>
+          <div className="w-11/12 h-0.5 lg:ml-16 bg-gray-100 opacity-50 " />
           <div className="mt-12  pt-6">
             <div className="text-center sm:flex sm:justify-between sm:text-left">
               <p className="text-lg text-gray-100">

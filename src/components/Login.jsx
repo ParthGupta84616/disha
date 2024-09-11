@@ -7,21 +7,21 @@ const Login = ({ handleChange, handleSubmit, setCurrentStep }) => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="flex flex-col md:flex-row w-full max-w-4xl bg-gray-900 rounded-lg overflow-hidden">
-      <div className="hidden md:block md:w-1/2 bg-indigo-600 p-10">
+    <div className="flex flex-col md:flex-row w-full max-w-6xl bg-gray-800 rounded-3xl overflow-hidden">
+      <div className="hidden md:block md:w-1/2 bg-gray-700 p-10">
         <img
           src={LoginImg}
           alt="Login"
-          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+          className="w-full brightness-90 h-full rounded-l-3xl object-cover transition-transform duration-500 hover:scale-105"
         />
       </div>
-      <div className="w-full md:w-1/2 p-10">
+      <div className="w-full flex-1 md:w-1/2 p-10 flex flex-col justify-center">
         <h1 className="text-3xl font-bold text-gray-100 mb-5">Login</h1>
-        <form onSubmit={handleSubmit}>
-          <div className="flex flex-col mb-5">
+        <form onSubmit={handleSubmit} className="space-y-5">
+          <div className="flex flex-col">
             <label
               htmlFor="email"
-              className="text-xs font-semibold text-gray-300"
+              className="text-md font-semibold text-gray-300 mb-1"
             >
               Email
             </label>
@@ -37,10 +37,10 @@ const Login = ({ handleChange, handleSubmit, setCurrentStep }) => {
               />
             </div>
           </div>
-          <div className="flex flex-col mb-5">
+          <div className="flex flex-col">
             <label
               htmlFor="password"
-              className="text-xs font-semibold text-gray-300"
+              className="text-md font-semibold text-gray-300 mb-1"
             >
               Password
             </label>
@@ -67,19 +67,21 @@ const Login = ({ handleChange, handleSubmit, setCurrentStep }) => {
               </button>
             </div>
           </div>
-          <div className="flex justify-between mt-8">
+          <div className="flex items-center justify-end space-x-2">
+            <p>Don't have an account?</p>
             <button
-              type="submit"
-              className="bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg px-4 py-3 font-semibold transition-all duration-300"
-            >
-              Login
-            </button>
-            <button
-              type="button"
               onClick={() => setCurrentStep("signup")}
-              className="bg-gray-600 hover:bg-gray-700 text-white rounded-lg px-4 py-3 font-semibold transition-all duration-300"
+              className="text-blue-500 cursor-pointer bg-transparent border-none"
             >
               Sign Up
+            </button>
+          </div>
+          <div className="flex items-center justify-around w-full mt-8">
+            <button
+              type="submit"
+              className="bg-blue-500 rounded-xl w-36 text-xl hover:bg-blue-600 text-white px-4 py-3 font-semibold transition-all duration-300"
+            >
+              Login
             </button>
           </div>
         </form>

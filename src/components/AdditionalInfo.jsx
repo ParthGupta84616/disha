@@ -5,12 +5,12 @@ const yearOptions = Array.from({ length: 50 }, (_, i) => 1990 + i);
 
 const AdditionalInfo = ({ handleChange, handleSubmit, setCurrentStep }) => {
   return (
-    <div className="flex flex-col md:flex-row w-full max-w-7xl bg-gray-900 rounded-lg overflow-hidden">
-      <div className="hidden md:block md:w-2/5 bg-indigo-600 p-10">
+    <div className="flex flex-col md:flex-row w-full max-w-7xl bg-gray-800 rounded-lg overflow-hidden">
+      <div className="hidden md:block md:w-2/5 bg-gray-700 p-10">
         <img
           src={SignUpImg}
           alt="Additional Info"
-          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+          className="w-full brightness-90 h-full object-cover transition-transform duration-500 hover:scale-105"
         />
       </div>
       <div className="w-full  md:w-3/5 p-10">
@@ -22,7 +22,7 @@ const AdditionalInfo = ({ handleChange, handleSubmit, setCurrentStep }) => {
             <div className="flex flex-col mb-5 w-72">
               <label
                 htmlFor="country"
-                className="text-xs font-semibold text-gray-300"
+                className="text-md mb-1 font-semibold text-gray-300"
               >
                 Country
               </label>
@@ -38,7 +38,7 @@ const AdditionalInfo = ({ handleChange, handleSubmit, setCurrentStep }) => {
             <div className="flex flex-col mb-5 w-72">
               <label
                 htmlFor="state"
-                className="text-xs font-semibold text-gray-300"
+                className="text-md mb-1 font-semibold text-gray-300"
               >
                 State
               </label>
@@ -55,7 +55,7 @@ const AdditionalInfo = ({ handleChange, handleSubmit, setCurrentStep }) => {
           <div className="flex flex-col mb-5">
             <label
               htmlFor="district"
-              className="text-xs font-semibold text-gray-300"
+              className="text-md mb-1 font-semibold text-gray-300"
             >
               District
             </label>
@@ -71,7 +71,7 @@ const AdditionalInfo = ({ handleChange, handleSubmit, setCurrentStep }) => {
           <div className="flex flex-col mb-5">
             <label
               htmlFor="college"
-              className="text-xs font-semibold text-gray-300"
+              className="text-md mb-1 font-semibold text-gray-300"
             >
               College
             </label>
@@ -87,7 +87,7 @@ const AdditionalInfo = ({ handleChange, handleSubmit, setCurrentStep }) => {
           <div className="flex flex-col mb-5">
             <label
               htmlFor="department"
-              className="text-xs font-semibold text-gray-300"
+              className="text-md mb-1 font-semibold text-gray-300"
             >
               Department
             </label>
@@ -104,7 +104,7 @@ const AdditionalInfo = ({ handleChange, handleSubmit, setCurrentStep }) => {
             <div className="flex flex-col mb-5 w-72">
               <label
                 htmlFor="joiningYear"
-                className="text-xs font-semibold text-gray-300"
+                className="text-md mb-1 font-semibold text-gray-300"
               >
                 Joining Year
               </label>
@@ -124,7 +124,7 @@ const AdditionalInfo = ({ handleChange, handleSubmit, setCurrentStep }) => {
             <div className="flex flex-col mb-5 w-72">
               <label
                 htmlFor="passoutYear"
-                className="text-xs font-semibold text-gray-300"
+                className="text-md mb-1 font-semibold text-gray-300"
               >
                 Passout Year
               </label>
@@ -146,7 +146,7 @@ const AdditionalInfo = ({ handleChange, handleSubmit, setCurrentStep }) => {
           <div className="flex flex-col mb-5">
             <label
               htmlFor="domain"
-              className="text-xs font-semibold text-gray-300"
+              className="text-md mb-1 font-semibold text-gray-300"
             >
               Domain
             </label>
@@ -162,17 +162,17 @@ const AdditionalInfo = ({ handleChange, handleSubmit, setCurrentStep }) => {
           <div className="flex items-center justify-around w-full">
             <div className="flex items-center  justify-around my-4 w-2/3">
               <button
-                type="submit"
-                className="bg-indigo-600 w-28 hover:bg-indigo-700 text-white rounded-lg px-4 py-3 font-semibold transition-all duration-300"
-              >
-                Next
-              </button>
-              <button
                 type="button"
                 onClick={() => setCurrentStep("signup")}
-                className="bg-gray-600 w-28 hover:bg-gray-700 text-white rounded-lg px-4 py-3 font-semibold transition-all duration-300"
+                className="bg-gray-600 w-36 text-xl hover:bg-gray-700 text-white rounded-xl px-4 py-3 font-semibold transition-all duration-300"
               >
                 Back
+              </button>
+              <button
+                type="submit"
+                className="bg-blue-500 w-36 text-xl hover:bg-blue-600 text-white rounded-xl px-4 py-3 font-semibold transition-all duration-300"
+              >
+                Sign Up
               </button>
             </div>
           </div>

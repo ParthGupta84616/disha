@@ -34,7 +34,7 @@ export default function Navbar() {
             </Link> */}
           </nav>
           <Link
-            className="group relative rounded-3xl lg:ml-8 inline-flex items-center overflow-hidden  bg-indigo-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500 mt-4 md:mt-0"
+            className="group mr-2 relative rounded-3xl lg:ml-8 inline-flex items-center overflow-hidden  bg-indigo-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500 mt-4 md:mt-0"
             to="/login"
           >
             <span className="absolute -end-full transition-all group-hover:end-4">
@@ -58,7 +58,7 @@ export default function Navbar() {
             </div>
           </Link>
         </div>
-        <div className="lg:w-3/4 w-full h-0.5 lg:ml-52 bg-gray-100 opacity-50 "></div>
+        <div className="lg:w-4/5 w-full h-0.5 lg:ml-48 bg-gray-100 opacity-50 "></div>
       </header>
     </div>
   );

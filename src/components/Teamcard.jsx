@@ -4,6 +4,7 @@ import MP from "../assests/members/MP.jpg";
 import PL from "../assests/members/PL.jpg";
 import SRP from "../assests/members/SRP.jpg";
 import SS from "../assests/members/SS.jpg";
+import ND from "../assests/members/ND.jpg";
 
 // Reusable Card Component
 const TeamMemberCard = ({ member }) => (
@@ -56,7 +57,7 @@ const teamMembers = [
     role: "Back-end Developer",
     description:
       "Expert in server-side development, focusing on building robust and scalable backend systems, APIs, and database management.",
-    imgSrc: "https://avatars.githubusercontent.com/u/71652584?v=4",
+    imgSrc: ND,
   },
   {
     id: 5,

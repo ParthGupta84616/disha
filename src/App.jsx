@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Institution from "./pages/Institution";
 import RegisterAndLogin from "./pages/RegisterAndLogin";
 import AskDisha from "./pages/AskDisha";
+import Skills from "./components/Skills"; // Import Skills page
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 // import PricingPage from './pages/Pricing';
@@ -93,6 +94,18 @@ export default function App() {
           <RouteTracker>
             <Navbar />
             <RegisterAndLogin />
+            <Footer />
+          </RouteTracker>
+        </div>
+      ),
+    },
+    {
+      path: "/skills/:alumniId", // Add this route for Skills
+      element: (
+        <div>
+          <RouteTracker>
+            <Navbar />
+            <Skills />
             <Footer />
           </RouteTracker>
         </div>
