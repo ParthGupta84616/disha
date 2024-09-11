@@ -1,21 +1,21 @@
-import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Home from './pages/Home';
-import Dashboard from './pages/Dashboard';
-import About from './pages/About';
-import Institution from './pages/Institution';
-import Error from './pages/Error';
-import AskDisha from './pages/AskDisha';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import PricingPage from './pages/Pricing';
-import RouteTracker from './components/RouteTracker';
-import Error404 from './pages/Error404';
+import React from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
+import About from "./pages/About";
+import Institution from "./pages/Institution";
+import RegisterAndLogin from "./pages/RegisterAndLogin";
+import AskDisha from "./pages/AskDisha";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+// import PricingPage from './pages/Pricing';
+import RouteTracker from "./components/RouteTracker";
+import Error404 from "./pages/Error404";
 
 export default function App() {
   const router = createBrowserRouter([
     {
-      path: '/',
+      path: "/",
       element: (
         <div>
           <RouteTracker>
@@ -24,10 +24,10 @@ export default function App() {
             <Footer />
           </RouteTracker>
         </div>
-      )
+      ),
     },
     {
-      path: '/dashboard',
+      path: "/dashboard",
       element: (
         <div>
           <RouteTracker>
@@ -36,10 +36,10 @@ export default function App() {
             <Footer />
           </RouteTracker>
         </div>
-      )
+      ),
     },
     {
-      path: '/ask-disha',
+      path: "/ask-disha",
       element: (
         <div>
           <RouteTracker>
@@ -48,22 +48,22 @@ export default function App() {
             <Footer />
           </RouteTracker>
         </div>
-      )
+      ),
     },
+    // {
+    //   path: '/pricing',
+    //   element: (
+    //     <div>
+    //       <RouteTracker>
+    //         <Navbar />
+    //         <PricingPage />
+    //         <Footer />
+    //       </RouteTracker>
+    //     </div>
+    //   )
+    // },
     {
-      path: '/pricing',
-      element: (
-        <div>
-          <RouteTracker>
-            <Navbar />
-            <PricingPage />
-            <Footer />
-          </RouteTracker>
-        </div>
-      )
-    },
-    {
-      path: '/about',
+      path: "/about",
       element: (
         <div>
           <RouteTracker>
@@ -72,10 +72,10 @@ export default function App() {
             <Footer />
           </RouteTracker>
         </div>
-      )
+      ),
     },
     {
-      path: '/institution',
+      path: "/institution",
       element: (
         <div>
           <RouteTracker>
@@ -84,22 +84,22 @@ export default function App() {
             <Footer />
           </RouteTracker>
         </div>
-      )
+      ),
     },
     {
-      path: '/login',
+      path: "/login",
       element: (
         <div>
           <RouteTracker>
             <Navbar />
-            <Error />
+            <RegisterAndLogin />
             <Footer />
           </RouteTracker>
         </div>
-      )
+      ),
     },
     {
-      path: '/*',
+      path: "/*",
       element: (
         <div>
           <RouteTracker>
@@ -108,11 +108,9 @@ export default function App() {
             <Footer />
           </RouteTracker>
         </div>
-      )
+      ),
     },
   ]);
 
-  return (
-    <RouterProvider router={router} />
-  );
+  return <RouterProvider router={router} />;
 }

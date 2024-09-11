@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
 import Teamcard from "../components/Teamcard";
 import FAQ from "../components/FAQ";
-
 
 export default function About() {
   return (
@@ -9,5 +8,5 @@ export default function About() {
       <Teamcard />
       <FAQ />
     </div>
-  )
+  );
 }

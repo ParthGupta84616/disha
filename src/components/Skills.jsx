@@ -52,14 +52,16 @@ const skills = [
   {
     index: 6,
     name: "Python",
-    description: "A high-level programming language known for its readability and versatility.",
+    description:
+      "A high-level programming language known for its readability and versatility.",
     icon: <FaPython className="text-3xl lg:text-4xl text-gray-200" />,
     link: "https://www.python.org/",
   },
   {
     index: 7,
     name: "Java",
-    description: "A high-level, class-based, object-oriented programming language.",
+    description:
+      "A high-level, class-based, object-oriented programming language.",
     icon: <FaJava className="text-3xl lg:text-4xl text-gray-200" />,
     link: "https://www.oracle.com/java/",
   },
@@ -73,7 +75,8 @@ const skills = [
   {
     index: 9,
     name: "PHP",
-    description: "A popular general-purpose scripting language for web development.",
+    description:
+      "A popular general-purpose scripting language for web development.",
     icon: <FaPhp className="text-3xl lg:text-4xl text-gray-200" />,
     link: "https://www.php.net/",
   },
@@ -87,7 +90,8 @@ const skills = [
   {
     index: 11,
     name: "Swift",
-    description: "A powerful and intuitive programming language for iOS and macOS.",
+    description:
+      "A powerful and intuitive programming language for iOS and macOS.",
     icon: <FaSwift className="text-3xl lg:text-4xl text-gray-200" />,
     link: "https://swift.org/",
   },

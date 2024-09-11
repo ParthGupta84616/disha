@@ -1,4 +1,9 @@
 import React from "react";
+import MK from "../assests/members/MK.jpg";
+import MP from "../assests/members/MP.jpg";
+import PL from "../assests/members/PL.jpg";
+import SRP from "../assests/members/SRP.jpg";
+import SS from "../assests/members/SS.jpg";
 
 // Reusable Card Component
 const TeamMemberCard = ({ member }) => (
@@ -27,15 +32,15 @@ const teamMembers = [
     role: "Cloud Architect",
     description:
       "Specializes in designing and managing cloud infrastructure, ensuring scalability, security, and efficiency of cloud-based systems.",
-    imgSrc: "https://avatars.githubusercontent.com/u/115715009?v=4",
+    imgSrc: MK,
   },
   {
     id: 2,
     name: "Mayank Piparde",
-    role: "Back-end Developer",
+    role: "Front-end Developer",
     description:
-      "Expert in server-side development, focusing on building robust and scalable backend systems, APIs, and database management.",
-    imgSrc: "https://avatars.githubusercontent.com/u/102994653?v=4",
+      "Skilled in creating dynamic and responsive user interfaces, translating design concepts into functional, engaging web applications.",
+    imgSrc: MP,
   },
   {
     id: 3,
@@ -43,15 +48,15 @@ const teamMembers = [
     role: "Project Manager",
     description:
       "Experienced in overseeing projects from conception to completion, ensuring timely delivery, budget adherence, and team coordination.",
-    imgSrc: "https://dummyimage.com/204x204",
+    imgSrc: PL,
   },
   {
     id: 4,
-    name: "Parth Gupta",
-    role: "Front-end Developer",
+    name: "Namish Dheer",
+    role: "Back-end Developer",
     description:
-      "Skilled in creating dynamic and responsive user interfaces, translating design concepts into functional, engaging web applications.",
-    imgSrc: "https://avatars.githubusercontent.com/u/148619447?v=4",
+      "Expert in server-side development, focusing on building robust and scalable backend systems, APIs, and database management.",
+    imgSrc: "https://avatars.githubusercontent.com/u/71652584?v=4",
   },
   {
     id: 5,
@@ -59,15 +64,15 @@ const teamMembers = [
     role: "Operations Executive",
     description:
       "Focused on optimizing business operations, managing logistics, and improving efficiency across various organizational processes.",
-    imgSrc: "https://avatars.githubusercontent.com/u/155767531?v=4",
+    imgSrc: SRP,
   },
   {
     id: 6,
-    name: "Punit Sankhala",
+    name: "Shruti Sonane",
     role: "Marketing Manager",
     description:
       "Expert in developing and executing marketing strategies, driving brand awareness, and analyzing market trends to boost business growth.",
-    imgSrc: "https://dummyimage.com/204x207",
+    imgSrc: SS,
   },
 ];
 
@@ -86,7 +91,7 @@ export default function Teamcard() {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {teamMembers.map(member => (
+          {teamMembers.map((member) => (
             <TeamMemberCard key={member.id} member={member} />
           ))}
         </div>

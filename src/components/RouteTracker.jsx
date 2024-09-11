@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const RouteTracker = ({ children }) => {
   const location = useLocation();
 
   useEffect(() => {
-    sessionStorage.setItem('lastUrl', location.pathname);
+    sessionStorage.setItem("lastUrl", location.pathname);
   }, [location]);
 
   return children;

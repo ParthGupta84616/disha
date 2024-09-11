@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Alumni from "../components/Alumni";
 import Skills from "../components/Skills";
 
@@ -8,5 +8,5 @@ export default function Dashboard() {
       <Alumni />
       <Skills />
     </div>
-  )
+  );
 }

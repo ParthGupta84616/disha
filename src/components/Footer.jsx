@@ -7,7 +7,7 @@ export default function Footer() {
     <div>
       <footer className="bg-gray-900">
         <div className="mx-auto max-w-screen-3xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24 ">
-        <div className="w-11/12 h-0.5 lg:ml-16 bg-gray-100 opacity-50 "></div>
+          <div className="w-11/12 h-0.5 lg:ml-16 bg-gray-100 opacity-50 "></div>
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3  pt-6  lg:pb-5">
             <div>
               <div className="flex justify-center text-teal-200 sm:justify-start">
@@ -142,7 +142,9 @@ export default function Footer() {
 
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
               <div className="text-center sm:text-left">
-                <p className="text-xl sm:text-lg font-medium text-gray-100">About Us</p>
+                <p className="text-xl sm:text-lg font-medium text-gray-100">
+                  About Us
+                </p>
 
                 <ul className="mt-8 space-y-4 text-lg">
                   <li>
@@ -275,7 +277,9 @@ export default function Footer() {
               </div>
 
               <div className="text-center sm:text-left">
-                <p className="text-xl sm:text-lg font-medium text-gray-100">Contact Us</p>
+                <p className="text-xl sm:text-lg font-medium text-gray-100">
+                  Contact Us
+                </p>
 
                 <ul className="mt-8 space-y-4 text-lg xs:text-sm xs:text-md">
                   <li>
@@ -350,10 +354,11 @@ export default function Footer() {
                     </svg>
 
                     <a href="https://aitr.ac.in/" target="blank">
-                    <address className="-mt-0.5 flex-1 not-italic text-gray-100">
-                      Acropolis Institute of Technology and Research , Indore ,
-                      India
-                    </address></a>
+                      <address className="-mt-0.5 flex-1 not-italic text-gray-100">
+                        Acropolis Institute of Technology and Research , Indore
+                        , India
+                      </address>
+                    </a>
                   </li>
                 </ul>
               </div>

@@ -29,9 +29,9 @@ export default function Navbar() {
             <Link to="/about" className="hover:text-gray-400">
               About
             </Link>
-            <Link to="/pricing" className="hover:text-gray-400">
+            {/* <Link to="/pricing" className="hover:text-gray-400">
               Pricing
-            </Link>
+            </Link> */}
           </nav>
           <Link
             className="group relative rounded-3xl lg:ml-8 inline-flex items-center overflow-hidden  bg-indigo-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500 mt-4 md:mt-0"
@@ -63,4 +63,3 @@ export default function Navbar() {
     </div>
   );
 }
-

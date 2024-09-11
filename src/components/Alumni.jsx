@@ -1,4 +1,5 @@
 import React from "react";
+import BG from "../assests/BG.jpg";
 
 const cards = [
   {
@@ -7,7 +8,7 @@ const cards = [
     name: "Alumni 1",
     description:
       "Experienced React Developer with a strong background in building scalable web applications and a passion for front-end technologies.",
-    imageSrc: "https://dummyimage.com/720x400",
+    imageSrc: BG,
     likes: "4.2K",
     comments: "15",
   },
@@ -17,7 +18,7 @@ const cards = [
     name: "Alumni 2",
     description:
       "Skilled React Native Developer specializing in mobile app development with a focus on creating seamless user experiences across platforms.",
-    imageSrc: "https://dummyimage.com/721x401",
+    imageSrc: BG,
     likes: "4.0K",
     comments: "12",
   },
@@ -27,7 +28,7 @@ const cards = [
     name: "Alumni 3",
     description:
       "Proficient Java Developer with extensive experience in building robust and efficient back-end systems and enterprise applications.",
-    imageSrc: "https://dummyimage.com/722x402",
+    imageSrc: BG,
     likes: "3.4K",
     comments: "11",
   },
@@ -37,7 +38,7 @@ const cards = [
     name: "Alumni 4",
     description:
       "Versatile Python Developer with expertise in data analysis, machine learning, and building high-performance applications.",
-    imageSrc: "https://dummyimage.com/722x402",
+    imageSrc: BG,
     likes: "3.0K",
     comments: "9",
   },
@@ -47,7 +48,7 @@ const cards = [
     name: "Alumni 5",
     description:
       "Detail-oriented Data Analyst skilled in extracting insights from complex datasets and driving business decisions through data-driven strategies.",
-    imageSrc: "https://dummyimage.com/722x402",
+    imageSrc: BG,
     likes: "2.6K",
     comments: "8",
   },
@@ -57,7 +58,7 @@ const cards = [
     name: "Alumni 6",
     description:
       "Experienced Database Administrator with a strong track record in managing and optimizing database systems for reliability and performance.",
-    imageSrc: "https://dummyimage.com/722x402",
+    imageSrc: BG,
     likes: "2.2K",
     comments: "6",
   },
@@ -70,7 +71,8 @@ export default function Dashboard() {
         <div className="container px-5 py-24 mx-auto">
           <h2 className="font-bold text-3xl lg:text-4xl mb-6">Alumni</h2>
           <h3 className="font-semibold text-gray-400 text-lg lg:text-xl mb-6">
-          Top Alumni From Various Fields</h3>
+            Top Alumni From Various Fields
+          </h3>
 
           <div className="flex flex-wrap -m-4">
             {cards.map((card) => (
@@ -94,7 +96,7 @@ export default function Dashboard() {
                         href="/"
                         className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
                       >
-                        Learn More
+                        Connect
                         <svg
                           className="w-4 h-4 ml-2"
                           viewBox="0 0 24 24"
@@ -108,7 +110,7 @@ export default function Dashboard() {
                           <path d="M12 5l7 7-7 7"></path>
                         </svg>
                       </a>
-                      <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200 dark:border-gray-600">
+                      <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 border-r-2 border-gray-200 dark:border-gray-600">
                         <svg
                           className="w-4 h-4 mr-1"
                           stroke="currentColor"
