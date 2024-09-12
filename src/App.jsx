@@ -9,6 +9,7 @@ import AskDisha from "./pages/AskDisha";
 import Skills from "./components/Skills"; // Import Skills page
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import AdminPanel from "./pages/AdminPanel";
 // import PricingPage from './pages/Pricing';
 import RouteTracker from "./components/RouteTracker";
 import Error404 from "./pages/Error404";
@@ -118,6 +119,18 @@ export default function App() {
           <RouteTracker>
             <Navbar />
             <Error404 />
+            <Footer />
+          </RouteTracker>
+        </div>
+      ),
+    },
+    {
+      path: "/adminPanel",
+      element: (
+        <div>
+          <RouteTracker>
+            <Navbar />
+            <AdminPanel />
             <Footer />
           </RouteTracker>
         </div>

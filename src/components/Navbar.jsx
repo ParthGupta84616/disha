@@ -29,6 +29,9 @@ export default function Navbar() {
             <Link to="/about" className="hover:text-gray-400">
               About
             </Link>
+            <Link to="/adminPanel" className="hover:text-gray-400">
+              Admin Panel
+            </Link>
             {/* <Link to="/pricing" className="hover:text-gray-400">
               Pricing
             </Link> */}
