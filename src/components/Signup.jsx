@@ -56,7 +56,7 @@ const Signup = ({ handleChange, handleSubmit, setCurrentStep }) => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row w-full max-w-7xl bg-gray-800 rounded-3xl overflow-hidden">
+    <div className="flex flex-col md:flex-row w-full max-w-7xl bg-gray-800 rounded-3xl my-8 overflow-hidden">
       <div className="hidden md:block md:w-2/5 bg-gray-700 p-10">
         <img
           src={SignUpImg}
